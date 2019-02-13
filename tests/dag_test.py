@@ -90,12 +90,10 @@ class TestDAG(unittest.TestCase):
         self.assertListEqual(upstream_task_ids, ['first-task'])
         downstream_task_ids = list(map(lambda task: task.task_id, python_task.downstream_list))
         self.assertListEqual(downstream_task_ids, [])
-    
-    
 
+        
 suite = unittest.TestLoader().loadTestsFromTestCase(TestDagIntegrity)
 unittest.TextTestRunner(verbosity=2).run(suite)
-
 
 suite2 = unittest.TestLoader().loadTestsFromTestCase(TestDAG)
 unittest.TextTestRunner(verbosity=2).run(suite2)
