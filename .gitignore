@@ -12,6 +12,9 @@
 *.sass-cache
 .#*
 
+# Python compiled files
+*.pyc
+
 # OS or Editor folders
 .DS_Store
 ._*
