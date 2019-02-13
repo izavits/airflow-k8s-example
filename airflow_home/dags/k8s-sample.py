@@ -23,6 +23,7 @@ dag = DAG('k8s-sample', default_args=default_args, schedule_interval=timedelta(m
 
 first_task = DummyOperator(task_id='first-task', dag=dag)
 
+# Create the tasks using images from dockerhub
 # Create a kubernetes pod using a python image
 python_task = KubernetesPodOperator(namespace='default',
                                     image="python:3.6",
