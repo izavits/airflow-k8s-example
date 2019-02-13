@@ -45,6 +45,9 @@ Start your minikube kubernetes cluster. From its web UI you will be able to see 
 
 Go to your local airflow UI (`localhost:8080`), toggle the DAG and trigger it. You will be able to see the tasks running in the Graph view and from your kubernetes cluster web UI you will be able to see the corresponding containers created in your kubernetes cluster.
 
+## Tests
+Unit tests are included. Run `pytest` to execute them. 
+
 ## Support
 If you're having any problem, please raise an issue on GitHub
 
