@@ -19,9 +19,9 @@ default_args = {
     'retry_delay': timedelta(minutes=3)
     }
 
-dag = DAG('k8s_sample', default_args=default_args, schedule_interval=timedelta(minutes=5))
+dag = DAG('k8s-sample', default_args=default_args, schedule_interval=timedelta(minutes=5))
 
-first_task = DummyOperator(task_id='First task', dag=dag)
+first_task = DummyOperator(task_id='first-task', dag=dag)
 
 # Create a kubernetes pod using a python image
 python_task = KubernetesPodOperator(namespace='default',
