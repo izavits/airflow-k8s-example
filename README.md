@@ -43,7 +43,7 @@ airflow scheduler
 
 Start your minikube kubernetes cluster. From its web UI you will be able to see the PODs that are created for the tasks of the example.
 
-Go to your local airflow UI (`localhost:8080`), toggle the DAG and trigger it. You will be able to see the tasks running in the Graph view and the corresponding containers created in your kubernetes cluster.
+Go to your local airflow UI (`localhost:8080`), toggle the DAG and trigger it. You will be able to see the tasks running in the Graph view and from your kubernetes cluster web UI you will be able to see the corresponding containers created in your kubernetes cluster.
 
 ## Support
 If you're having any problem, please raise an issue on GitHub
