@@ -1,7 +1,20 @@
 # airflow-k8s-example
 
-> An example using Apache Airflow with Kubernetes. It provides some very simple tasks that just print a string and runs them in kubernetes PODs using the Kubernetes POD Operator of airflow.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+> Apache Airflow with Kubernetes example.
+
+This is an example using Apache Airflow with Kubernetes. It provides some very basic tasks that just pring a string and runs them in kubernetes PODs using the kubernetes POD Operator of Apache Airflow.
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Support](#support)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Install
 - Clone the repository and enter the project directory.
@@ -22,7 +35,7 @@ pip install kubernetes
 
 *Note: We assume that you have a local kubernetes cluster running locally, e.g. using `minikube`.*
 
-## Run
+## Usage
 Create the airflow database:
 
 ```
@@ -56,6 +69,22 @@ pytest
 ## Support
 If you're having any problem, please raise an issue on GitHub.
 
+## Contributing
+PRs accepted. Some general guidelines:
+
+- Write a concise commit message explaining your changes.
+- If applies, write more descriptive information in the commit body.
+- Refer to the issue/s your pull request fixes (if there are issues in the github repo).
+- Write a descriptive pull request title.
+- Squash commits when possible.
+
+Before your pull request can be merged, the following conditions must hold:
+
+- All the tests passes (if any).
+- The coding style aligns with the project's convention.
+- Your changes are confirmed to be working.
+
+Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
 The project is licensed under the Apache 2.0 license.
